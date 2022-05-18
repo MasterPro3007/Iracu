@@ -4,7 +4,12 @@
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Python.Show()
+        If Language.SelectedItem = "ITALIA/Italian" Then
+            Python.Show()
+        End If
+        If Language.SelectedItem = "ENGLISH" Then
+            ENGpython.Show()
+        End If
     End Sub
 
     Private Sub RichTextBox1_TextChanged(sender As Object, e As EventArgs)
@@ -12,6 +17,22 @@
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        html.Show()
+        If Language.SelectedItem = "ITALIA/Italian" Then
+            html.Show()
+        End If
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        If Language.SelectedItem = "ITALIA/Italian" Then
+
+        End If
+        If Language.SelectedItem = "ENGLISH" Then
+            Label2.Text = "Inacu, has been progetted for semplificating of all programs: In python, java and more!"
+            Label4.Text = "Warning: The application isn't 100% completed, so if you found bugs, report to this link:"
+        End If
+    End Sub
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 End Class

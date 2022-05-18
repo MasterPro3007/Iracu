@@ -29,13 +29,19 @@ Partial Class Form1
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
+        Me.Language = New System.Windows.Forms.ListBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.25!)
-        Me.Label1.Location = New System.Drawing.Point(255, 9)
+        Me.Label1.Location = New System.Drawing.Point(340, 11)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(678, 39)
         Me.Label1.TabIndex = 0
@@ -45,7 +51,8 @@ Partial Class Form1
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!)
-        Me.Label2.Location = New System.Drawing.Point(13, 71)
+        Me.Label2.Location = New System.Drawing.Point(17, 87)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(828, 18)
         Me.Label2.TabIndex = 1
@@ -54,27 +61,32 @@ Partial Class Form1
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(13, 120)
+        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Button1.Location = New System.Drawing.Point(17, 148)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.Size = New System.Drawing.Size(100, 28)
         Me.Button1.TabIndex = 2
         Me.Button1.Text = "Python"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(109, 120)
+        Me.Button2.BackColor = System.Drawing.Color.Green
+        Me.Button2.Location = New System.Drawing.Point(145, 148)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.Size = New System.Drawing.Size(100, 28)
         Me.Button2.TabIndex = 3
         Me.Button2.Text = "HTML"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Button2.UseVisualStyleBackColor = False
         '
         'Label3
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.25!)
-        Me.Label3.Location = New System.Drawing.Point(408, 652)
+        Me.Label3.Location = New System.Drawing.Point(400, 801)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(445, 25)
         Me.Label3.TabIndex = 4
@@ -84,7 +96,8 @@ Partial Class Form1
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.25!)
-        Me.Label4.Location = New System.Drawing.Point(86, 534)
+        Me.Label4.Location = New System.Drawing.Point(100, 651)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(1049, 20)
         Me.Label4.TabIndex = 5
@@ -94,19 +107,73 @@ Partial Class Form1
         'LinkLabel1
         '
         Me.LinkLabel1.AutoSize = True
-        Me.LinkLabel1.Location = New System.Drawing.Point(504, 573)
+        Me.LinkLabel1.Location = New System.Drawing.Point(462, 713)
+        Me.LinkLabel1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.Size = New System.Drawing.Size(238, 13)
+        Me.LinkLabel1.Size = New System.Drawing.Size(284, 16)
         Me.LinkLabel1.TabIndex = 6
         Me.LinkLabel1.TabStop = True
         Me.LinkLabel1.Text = "https://github.com/MasterPro3007/Inacu/issues"
         '
+        'Language
+        '
+        Me.Language.FormattingEnabled = True
+        Me.Language.ItemHeight = 16
+        Me.Language.Items.AddRange(New Object() {"ITALIA/Italian", "ENGLISH"})
+        Me.Language.Location = New System.Drawing.Point(1068, 749)
+        Me.Language.Name = "Language"
+        Me.Language.Size = New System.Drawing.Size(120, 20)
+        Me.Language.TabIndex = 7
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(1065, 713)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(115, 16)
+        Me.Label5.TabIndex = 8
+        Me.Label5.Text = "Language/Lingua:"
+        '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(1090, 820)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(75, 23)
+        Me.Button3.TabIndex = 9
+        Me.Button3.Text = "ok"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(101, 539)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(503, 16)
+        Me.Label6.TabIndex = 10
+        Me.Label6.Text = "ATTENTION: If you use the English version, there's not all functions of italian v" &
+    "ersion."
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(101, 588)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(559, 16)
+        Me.Label7.TabIndex = 11
+        Me.Label7.Text = "ATTENZIONE: Se usi la versione inglese, non ci saranno tutte le funzioni della ve" &
+    "rsione italian"
+        '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1198, 686)
+        Me.ClientSize = New System.Drawing.Size(1225, 844)
+        Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.Label6)
+        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.Language)
         Me.Controls.Add(Me.LinkLabel1)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
@@ -114,6 +181,7 @@ Partial Class Form1
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "Form1"
         Me.Text = "INACU SUBLIME"
         Me.ResumeLayout(False)
@@ -128,4 +196,9 @@ Partial Class Form1
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents LinkLabel1 As LinkLabel
+    Friend WithEvents Language As ListBox
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Button3 As Button
+    Friend WithEvents Label6 As Label
+    Friend WithEvents Label7 As Label
 End Class

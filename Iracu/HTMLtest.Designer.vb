@@ -31,7 +31,8 @@ Partial Class HTMLtest
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!)
         Me.Label1.ForeColor = System.Drawing.Color.DarkRed
-        Me.Label1.Location = New System.Drawing.Point(13, 13)
+        Me.Label1.Location = New System.Drawing.Point(388, 20)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(514, 18)
         Me.Label1.TabIndex = 0
@@ -39,21 +40,23 @@ Partial Class HTMLtest
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(550, 339)
+        Me.Button1.Location = New System.Drawing.Point(584, 401)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.Size = New System.Drawing.Size(100, 28)
         Me.Button1.TabIndex = 1
         Me.Button1.Text = "INIZIA"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'HTMLtest
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.DarkGreen
-        Me.ClientSize = New System.Drawing.Size(1197, 693)
+        Me.ClientSize = New System.Drawing.Size(1235, 853)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label1)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "HTMLtest"
         Me.Text = "Test HTML"
         Me.ResumeLayout(False)
