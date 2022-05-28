@@ -6,9 +6,9 @@
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         If Language.SelectedItem = "ITALIA/Italian" Then
             Python.Show()
-        End If
-        If Language.SelectedItem = "ENGLISH" Then
+        ElseIf Language.SelectedItem = "ENGLISH" Then
             ENGpython.Show()
+        Else MsgBox("ITALIAN: Non hai selezionato la lingua! ENGLISH: You don't have choosed the language!")
         End If
     End Sub
 
@@ -27,7 +27,7 @@
 
         End If
         If Language.SelectedItem = "ENGLISH" Then
-            Label2.Text = "Inacu, has been progetted for semplificating of all programs: In python, java and more!"
+            Label2.Text = "Iracu, has been progetted for semplificating of all programs: In python, java and more!"
             Label4.Text = "Warning: The application isn't 100% completed, so if you found bugs, report to this link:"
         End If
     End Sub

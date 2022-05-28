@@ -9,20 +9,20 @@
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Dim CosaStampare = InputBox("Che cosa vuoi stampare in questa riga?")
-        TextBox1.Text = "print('" + CosaStampare + "');"
+        TextBox1.Text = "print('" & CosaStampare & "');"
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         Dim CosaContenere = InputBox("Che cosa Vuoi contenere nella varibaile - Scelte disponibili: Riga | Numero | Bollean(true / false)")
         If CosaContenere = "Riga" Then
             Dim riga = InputBox("cosa vuoi contenere in questa riga?")
-            TextBox1.Text = "String NomeVariabile = '" + riga + "';"
+            TextBox1.Text = "String NomeVariabile = '" & riga & "';"
         ElseIf CosaContenere = "Numero" Then
             Dim numero As Integer = InputBox("Che numero vuoi contenere?")
-            TextBox1.Text = "Int NomeVariabile = '" + numero + "';"
+            TextBox1.Text = "Int NomeVariabile = '" & numero & "';"
         ElseIf CosaContenere = "Boolean" Then
             Dim TrueOfalse As Boolean = InputBox("Inserire True (vero) o False (falso)?")
-            TextBox1.Text = "Boolean NomeVariabile = " + TrueOfalse + ";"
+            TextBox1.Text = "Boolean NomeVariabile = " & TrueOfalse & ";"
         Else
             MsgBox("Valore Non Valido! Se hai digitato tutto MAIUSCOLO o minuscolo, ricordati che va sempre con la lettera primaria Maiuscola.")
         End If

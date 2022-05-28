@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Iracu.exe" version="1.0.0.6" publicKeyToken="e0e2190571196807" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Iracu" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Iracu.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          Opzioni manifesto Controllo dell'account utente
+          Se si vuole modificare il livello di Controllo dell'account utente di Windows, sostituire il
+          nodo requestedExecutionLevel con uno dei seguenti.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         Se si vuole usare Virtualizzazione file system e registro di sistema per la 
+         compatibilità con le versioni precedenti, eliminare il nodo requestedExecutionLevel.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Iracu.exe" size="40416">
+      <assemblyIdentity name="Iracu" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>zlW/tVbYXjx0Lq4LP4GPnm5/P+tqnmf+sLF1Mg3N8w0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Iracu.exe.config" size="183">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>QOY68v3LU5ZGnc11qPpG1Ds4qD3cZf6tZI5U8cNiIi4=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-N607S8Q\lopog" issuerKeyHash="7647aa17f075a9e279af69cc1badbc8e73116d14" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>PRKiBEdm7PG6xNVPso27QuGFSf/Nxy6kVD+qL7gB/4I=</DigestValue></Reference></SignedInfo><SignatureValue>Ga5Bo32f60eThwNvR5+HRgxpcKIaJV9qemR/DRE9/xv4ohoSDGTV57VkL6/YSK3NsCTJbKg64t6txHEPS7IZSXuMyqx8xDgEuQB4eNKE5DfpFzFoBi/uMawpiufMmCwY9VO6gAJXk3R9TOUdbELpGen1LDLKqAXZQkh2/bJiTps=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>woObuHGPVpmlbppTlqqYJkk6/gtJxUsXBivosTY8TVIYaRnF5TWx1iQRX4hlF/Zb6rj9vVfAu25ItjUuBNvO9eNhuT3tQOs15aKNbG+eY1uJ7/3e2bWfOjEC7s7Wp0vuIl1LGypjsHLpuNC6vuz9vzK7CoD28wf7wztVpsO3ugk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="82ff01b82faa3f54a42ec7cdff4985e142bb8db24fd5c4baf1ec664704a2123d" Description="" Url=""><as:assemblyIdentity name="Iracu.exe" version="1.0.0.6" publicKeyToken="e0e2190571196807" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-N607S8Q\lopog</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>q/SqOjyiG/jbqCBoqrUXf7yNYUtNLEFGSFDE1hoJvDM=</DigestValue></Reference></SignedInfo><SignatureValue>e2XLWewUJmXk5vBDuWsuJxWoihidFXyu65fZRa1xdk91hWTlFNGk3K32YbFFzwzY6KOLRu7GmCx5VL/V6cCf/QCqzrh2BXqGvB+dus0KomHXf1bqhSgYBxx23R93IsKx7CgvuBHyXLON5JyU9vu7ZwEkhAdkSTjD09o0GMR8W94=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>woObuHGPVpmlbppTlqqYJkk6/gtJxUsXBivosTY8TVIYaRnF5TWx1iQRX4hlF/Zb6rj9vVfAu25ItjUuBNvO9eNhuT3tQOs15aKNbG+eY1uJ7/3e2bWfOjEC7s7Wp0vuIl1LGypjsHLpuNC6vuz9vzK7CoD28wf7wztVpsO3ugk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQVFUM8bzkCJhIvwHlZoOQbzANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAE4ANgAwADcAUwA4AFEAXABsAG8AcABvAGcwHhcNMjIwNTEzMTQxNDMxWhcNMjMwNTEzMjAxNDMxWjA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAE4ANgAwADcAUwA4AFEAXABsAG8AcABvAGcwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMKDm7hxj1aZpW6aU5aqmCZJOv4LScVLFwYr6LE2PE1SGGkZxeU1sdYkEV+IZRf2W+q4/b1XwLtuSLY1LgTbzvXjYbk97UDrNeWijWxvnmNbie/93tm1nzoxAu7O1qdL7iJdSxsqY7By6bjQur7s/b8yuwqA9vMH+8M7VabDt7oJAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAN+j/YJKjSQXQDLFxkvrctS/ZL7ZWPPtYmwYHlLN1ao3za/tylZuCodHEdijWpvbzhv8Iv1xd2kEx8lHvKJm8zioO15PcL0RM3+BU4M2BfCtXxKzehpunN8RpWjecDOhNnXKOUhG5V2/v2DXCmeAD7EpY1q8P3UiUf3PwA+b3YVc=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
